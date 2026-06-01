@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validação A e B</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+<div class="card">
+  <div class="label-row">
+    <h1>Validação</h1>
+  </div>
+
+  <p class="rule">Condição: <span>B > A</span></p>
+
+  <div class="fields">
+    <div class="field">
+      <label><span class="letter">A</span> — valor base</label>
+      <input type="number" id="fieldA" placeholder="0">
+    </div>
+    <div class="field">
+      <label><span class="letter">B</span> — deve ser maior</label>
+      <input type="number" id="fieldB" placeholder="0">
+    </div>
+  </div>
+
+  <button class="btn" onclick="validar()">Verificar</button>
+
+  <div id="msg" class="message"></div>
+</div>
+
+</body>
+</html>
